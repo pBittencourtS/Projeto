@@ -518,6 +518,11 @@ h2 {
 
 .textoImagem{
     display: flex;
+    gap: 30px;
+}
+
+.textoImagem p{
+    text-align: justify;
 }
 
 .left-container{
