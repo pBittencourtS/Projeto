@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #2e364a;
+}
+
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto
+}
+
+.container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+}
+
+.container img{
+    width: 150px;
+    height: auto;
+}
+
+
+.textoImagem{
+    display: flex;
+}
+
+.left-container{
+    left: 0;
+}
+
+
+
+.right-container{
+    left: 50%;
+}
+
+.textBox{
+    position: relative;
+    padding: 20px 30px;
+    background: #fff;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.textBox small{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.logoTimeline{
+    position: absolute;
+    width: 50px !important;
+    height: auto !important;
+    background-color: white;
+    border-radius: 50%;
+    right: -25px;
+    top: 32px;
+    z-index: 10;
+}
+
+.right-container .logoTimeline{
+    left: -25px;
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: #fff;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+}
+
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid white;
+    right: -15px;
+}
+
+.right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid white;
+    left: -15px;
+}
+
+#xboxOriginal{
+    width: 200px;
+    height: auto;
+}

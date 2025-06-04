@@ -1,0 +1,608 @@
+body {
+    margin: 0;
+    width: 100%;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    position: relative;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+
+h2 {
+    text-align: start;
+}
+
+.tituloDicas, .tituloVaga {
+    font-size: 25px;
+
+}
+
+.dicas, .vagas{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.hrPrincipal{
+    border: 0;
+    height: 3px;
+    background-color: #107C10;
+    margin: 20px 0;
+}
+
+.linkDica, .linkVaga {
+    text-decoration: none;
+    color: rgb(110, 161, 179);
+    font-size: 20px;
+}
+
+.linkVaga {
+    text-align: end;
+    margin-left: auto;
+}
+
+.linkDica:hover {
+    text-decoration: underline;
+}
+
+.linkVaga:hover {
+    text-decoration: underline;
+}
+
+.listaRedesSociais{
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.listaRedesSociais li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.listaCuriosidades a {
+    text-decoration: none;
+
+}
+
+.pConteudo{
+    text-align: justify;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+#dicasPotencializar{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.dica{
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.vaga{
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    gap: 30px;
+}
+
+.imgDica{
+    width: 200px;
+    height: auto;
+}
+
+.listaCuriosidades{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.listaCuriosidades li {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+
+.jogos{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 1px;
+}
+
+.jogo{
+    position: relative;
+    overflow: hidden
+}
+
+.jogo:hover .nomeJogo {
+    color: white;
+}
+
+.jogo:hover .botaoJogar {
+    visibility: visible;
+}
+
+.jogo:hover .capaJogo {
+    transform: scale(1.3);
+    filter: brightness(30%);
+
+}
+
+.botaoJogar{
+    visibility: hidden;
+    background-color: #107C10;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -120%);
+}
+
+.botaoJogar:hover {
+    background-color: #054B16;
+}
+
+.capaJogo{
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.2s;
+}
+
+.capaJogo:hover {
+    transform: scale(1.3);
+    filter: brightness(30%);
+}
+
+.nomeJogo{
+    white-space: nowrap;
+    font-size: 28px;
+    color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -130%);
+}
+
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+}
+
+#cabecalhoTexto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.logoEmpresa {
+    width: 100px;
+    height: auto;
+    max-height: 200px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #107C10;
+    padding: 5px;
+}
+
+.listaItens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.linkMenu {
+    padding: 10px;
+    background-color: #9BF00B;
+    color: #054B16;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.linkMenu:hover {
+    background-color: #9cf00b91;
+}
+
+.apresentacao {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+.parte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+/* 
+.parteTexto{
+    width: 80%;
+    margin: 0 auto;
+} */
+
+.atcImgLeft{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    align-items: center;
+}
+
+
+.atcImgRight{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.listaFundadores{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 30px;
+}
+
+.listaFundadores li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.fotoFundador {
+    width: 150px;
+    height: auto;
+    margin: 10px;
+    border-radius: 30px;
+    transition-duration: 0.2s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.fotoFundador:hover {
+    transform: scale(1.3);
+}
+
+.logoEmpresaGrande {
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+}
+
+.descricaoProduto{
+    margin: 10px;
+}
+
+.textoDescricao{
+    font-size: 18px;
+    text-align: justify;
+}
+
+.produtos{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.linkProduto {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.precoProduto{
+    font-size: 24px;
+    font-weight: bold;
+    color: #0b5c0b;
+    margin-bottom: 0px;
+}
+
+.precoProdutoEspecial{
+    font-size: 24px;
+    font-weight: bold;
+    color: gold;
+    margin-bottom: 0px;
+}
+
+.centavos{
+    font-size: 16px;
+    color: #0b5c0b;
+    margin-top: 0px;
+}
+
+.centavosEspecial{
+    font-size: 16px;
+    color: gold;
+    margin-top: 0px;
+}
+
+.foraEstoque{
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+
+.produto{
+    background-color: #9BF00B;
+    /* box-shadow: 4px 4px 4px rgba(0,0,0,0.2); */
+    border-radius: 20px;
+    gap: 10px;
+    transition-duration: 0.2s;
+}
+
+.produtoEspecial{
+    background-color: #272727;
+    /* box-shadow: 4px 4px 4px rgba(0,0,0,0.2); */
+    border-radius: 20px;
+    gap: 10px;
+    transition-duration: 0.2s;
+    color: white;
+}
+
+.produto:hover,
+.produtoEspecial:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 4px 20px rgba(0,0,0,0.2);
+}
+
+
+.imgProduto{
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+}
+
+.imgProdutoSemFundo{
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+    background-color: #171717;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: #F2F2F2;
+    color: black;
+    width: 100%;
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 10px;
+    box-sizing: border-box;
+    margin-top: 100px;
+}
+
+.rodapeSuperior {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.rodapeInferior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.rodapeInferior a{
+    text-decoration: none;
+    color: grey;
+}
+
+.rodapeInferior a:hover {
+    text-decoration: underline;
+}
+
+.informacoesRodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.informacoesRodape h3,
+.informacoesRodape h4 {
+    font-weight: bold;
+}
+
+.informacoesRodape ul {
+    list-style: none;
+    text-align: start;
+    padding: 0;
+}
+
+.informacoesRodape ul li {
+    margin: 10px 0;
+}
+
+.informacoesRodape a {
+    text-decoration: none;
+    color: grey;
+    transition: text-decoration 0.3s ease;
+}
+
+.informacoesRodape a:hover {
+    text-decoration: underline;
+}
+
+.redesSociais {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    justify-content: flex-start;
+}
+
+.redesSociais i {
+    color: black;
+    font-size: 20px;
+}
+
+.redesSociais i:hover {
+    color: grey;
+}
+
+
+.mainTimeline{
+    background-color: black;
+}
+
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 100px auto;
+  z-index: 1;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+  padding: 10px 50px;
+  box-sizing: border-box;
+}
+.container img{
+    width: 150px;
+    height: auto;
+}
+
+
+.textoImagem{
+    display: flex;
+}
+
+.left-container{
+    left: 0;
+}
+
+
+
+.right-container{
+    left: 50%;
+}
+
+.textBox{
+    position: relative;
+    padding: 20px 30px;
+    background: #333333;
+    color: white;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.textBox h2{
+    margin: 0;
+    font-size: 30px;
+}
+
+.textBox small{
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.logoTimeline{
+    position: absolute;
+    width: 50px !important;
+    height: auto !important;
+    background-color: white;
+    border-radius: 50%;
+    right: -25px;
+    top: 32px;
+    z-index: 10;
+}
+
+.right-container .logoTimeline{
+    left: -25px;
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+}
+
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid black;
+    right: -15px;
+}
+
+.right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid black;
+    left: -15px;
+}
+
+#xboxOriginal{
+    width: 200px;
+    height: auto;
+}
